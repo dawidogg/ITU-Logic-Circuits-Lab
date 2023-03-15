@@ -27,5 +27,3 @@ module NAND(a_nand_b, a, b);
     input a, b;
     assign a_nand_b = a ~& b;
 endmodule;
-
-module 
