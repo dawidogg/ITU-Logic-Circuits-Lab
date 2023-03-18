@@ -33,7 +33,7 @@ module OR_8(out, a);
     OR or4(stage1[0], stage0[0], stage0[1]);
     OR or5(stage1[1], stage0[2], stage0[3]);
 
-    OR or6(out, stage1[0], stage0[1]);
+    OR or6(out, stage1[0], stage1[1]);
 endmodule
 
 module NOT(not_a, a);
