@@ -3,7 +3,7 @@ module half_adder(s, c, a, b);
     input a, b;
     XOR xor0(s, a, b);
     AND and0(c, a, b);
-endmodule;
+endmodule
 
 module full_adder(s, c_out, a, b, c_in);
     output s, c_out;
@@ -28,4 +28,25 @@ module full_adder_8_bit(s, c_out, a, b, c_in);
     full_adder fa5(s[5], c[5], a[5], b[5], c[4]);
     full_adder fa6(s[6], c[6], a[6], b[6], c[5]);
     full_adder fa7(s[7], c_out, a[7], b[7], c[6]);
-endmodule;
+endmodule
+
+module full_adder_8_bit_tb();
+    wire [7:0] s;
+    wire c_out;
+    reg [7:0] a, b;
+    reg c_in;
+    
+    full_adder_8_bit uut (s, c_out, a, b, c_in);
+    
+    initial begin
+        a = 8'd29; b = 8'd5; c_in = 1'b0; #25;
+        a = 8'd51; b = 8'd92; c_in = 1'b0; #25;
+        a = 8'd17; b = 8'd28; c_in = 1'b0; #25;
+        a = 8'd191; b = 8'd2; c_in = 1'b0; #25;
+        a = 8'd200; b = 8'd95; c_in = 1'b0; #25;
+        a = 8'd49; b = 8'd25; c_in = 1'b0; #25;
+        a = 8'd78; b = 8'd255; c_in = 1'b0; #25;
+        a = 8'd43; b = 8'd59; c_in = 1'b0; #25;
+        $finish;
+    end
+endmodule
