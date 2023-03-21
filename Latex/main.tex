@@ -73,19 +73,44 @@ Karnaugh diagram and Quine-McCluskey method; implementing the same function with
 
 
 
-\subsection{FIRST HEADER}
-$ F_1 (a, b, c, d) = \cup_1 (0, 2, 6, 7, 8, 10, 11, 15) + \cup_{\phi} (4)$
+\subsection{Preliminary}
+
+$ F_1 (a, b, c, d) = \cup_1 (0, 2, 6, 7, 8, 10, 11, 15) + \cup_{\phi} (4)$ \\
+For the given function $F_1$, we apply given operations below:
+\begin{enumerate}
+    \item Find its prime implicants using Karnaugh diagram.
+\end{enumerate}
+\begin{itemize}
+    \item In order to obtain prime implicants of function \textbf{$F_1$}, we cluster all \textbf{true points} (1s) which are in the adjacent cells in the Karnaugh diagram into same group. Afterwards, we retain the constant literals and remove the changing ones. Moreover, if the truth value of a constant variable is \textbf{‘1’}, we use \textbf{true form} of that variable to write the relevant prime implicant. Otherwise, we use its \textbf{complement form}.\\
+
+    \textbf{NOTE:} We assume \textbf{don't care terms ($\phi$)} to be \textbf{true} (1) to create larger groups.
+\end{itemize}
+
+\begin{figure}[H]
+    \centering
+        \includegraphics[width=0.5\textwidth]{map1.png}	
+        \caption{Karnaugh map of the function  $F_1$}
+        \label{fig1}
+\end{figure}
+
+\textbf{Set of all prime implicants:}\\
+
+\begin{figure}[H]
+    \centering
+        \includegraphics[width=0.5\textwidth]{primeimplicants.png}	
+        \caption{Prime implicants of the function  $F_1$}
+        \label{fig1}
+\end{figure}
+
+\begin{enumerate}
+    2. Find its prime implicants using Quine-McCluskey method.
+\end{enumerate}
 
 $F_2 (a, b, c) = \overline{a}bc + a\overline{b}c$
 
 $F_3 (a, b, c) = ab\overline{c} + ab$
 	
-\begin{figure}[ht]
-    \centering
-	\includegraphics[width=0.5\textwidth]{map1.png}	
-	\caption{Karnaugh map of the function  f\cite{ref1}}
-	\label{fig1}
-\end{figure}
+
 
 \subsection{SECOND HEADER}
 
@@ -106,4 +131,3 @@ Comment on any difficulties you have faced, what you have learned etc.
 \bibliography{reference}
 
 \end{document}
-
