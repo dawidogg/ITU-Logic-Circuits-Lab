@@ -23,4 +23,9 @@ module gate_tb;
         $display(" Time     a     b    ~a    ~b   a&b   a|b   a^b  a~&b");
         $monitor("%5t %5b %5b %5b %5b %5b %5b %5b %5b", $time, a, b, not_a, not_b, a_and_b, a_or_b, a_xor_b, a_nand_b);
     end;
+    initial
+    begin
+        $dumpfile("test.vcd");
+        $dumpvars(0, a, b, not_a, not_b, a_and_b, a_or_b, a_xor_b, a_nand_b);
+    end
 endmodule

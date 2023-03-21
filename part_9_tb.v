@@ -5,6 +5,11 @@ module part_9_tb;
     full_adder_8_bit fa(s, carry, a, b, 1'b0);
     parameter delay = 5;
 
+    initial
+    begin
+        $dumpfile("test.vcd");
+        $dumpvars(0, s);
+    end
     initial begin
         $monitor("Time %3t: %8d + %d = %d, overflow: %b", $time, a, b, s, carry);
 
