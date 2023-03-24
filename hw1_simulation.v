@@ -20,6 +20,25 @@ module OR_3_tb();
 
 endmodule
 
+module AND_3_tb();
+    reg [2:0] i;
+    wire out;
+    
+    AND_3 uut(out, i);
+    
+    initial begin
+        i = 3'b000; #25;
+        i = 3'b001; #25;
+        i = 3'b010; #25;
+        i = 3'b011; #25;
+        i = 3'b100; #25;
+        i = 3'b101; #25;
+        i = 3'b110; #25;
+        i = 3'b111; #25;
+        $finish;
+    end
+endmodule
+
 module part_1_nand_3_tb;
     reg[2:0] counter;
     parameter delay = 5;

@@ -6,6 +6,14 @@ module AND(a_and_b, a, b);
     assign a_and_b = a & b;
 endmodule
 
+module AND_3(out, i);
+    input [2:0] i;
+    output out;
+    wire and_0_1;
+    AND and0(and_0_1, i[0], i[1]);
+    AND and1(out, and_0_1, i[2]);
+endmodule
+
 module AND_4(out, a);
     output out;
     input[3:0] a;
