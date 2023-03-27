@@ -1,47 +1,31 @@
-\documentclass{article}
-\usepackage{circuitikz}
+\documentclass[pdftex,12pt,a4paper]{article}
+
+\usepackage{graphicx}  
+\usepackage[margin=2.5cm]{geometry}
+\usepackage{breakcites}
+\usepackage{indentfirst}
+\usepackage{pgfgantt}
+\usepackage{pdflscape}
+\usepackage{float}
+\usepackage{epsfig}
+\usepackage{epstopdf}
+\usepackage[cmex10]{amsmath}
+\usepackage{stfloats}
+\usepackage{multirow}
+\usepackage{svg}
+
+\renewcommand{\refname}{REFERENCES}
+\linespread{1.3}
+
+\usepackage{mathtools}
+\graphicspath{ {images/} }
+
 \begin{document}
 
-%
-%\begin{circuitikz} \draw
-%(0,2) node[and port] (myand1) {}
-%(0,0) node[and port] (myand2) {}
-%(2,1) node[xnor port] (myxnor) {}
-%(myand1.out) -- (myxnor.in 1)
-%(myand2.out) -- (myxnor.in 2);
-%\end{circuitikz}
-
-
-\begin{circuitikz} \draw 
-(0,0) node[or port] (or1) {}
-(0,-2) node[or port] (or2) {}
-(2,-1) node[and port] (and1) {}
-(and1.out) node[above right] {$F(a,b)$}
-(or2.in 1) node[left]{a}
-(or2.in 2) node[left]{b}
-(or1.in 1) node[left]{a}
-(or1.in 2) node[left]{b'}
-(or1.out) -- (and1.in 1)
-(or2.out) -- (and1.in 2);
-\end{circuitikz}
-
-\begin{circuitikz} \draw
-(0, 0) node[or port] (or1) {}
-(2, 0) node[and port] (and1) {}
-(or1.in 1) node[left]{a}
-(or1.in 2) node[left]{b}
-(and1.out) node[right]{$a*(a+b)$}
-(or1.out) -- (and1.in 2)
-(or1.in 1) -- (and1.in 1);
-
-\end{circuitikz}
-
+\includegraphics[width=\textwidth]{EasyEDA_part_1.png}
+\includegraphics[width=\textwidth]{EasyEDA_part_2.png}
+\includegraphics[width=\textwidth]{EasyEDA_part_3.png}
+\includegraphics[width=\textwidth]{EasyEDA_part_4.png}
+\includegraphics[width=\textwidth]{EasyEDA_part_5.png}
 
 \end{document}
-
-
-
-
-
-
-
