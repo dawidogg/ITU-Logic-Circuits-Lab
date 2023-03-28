@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdflatex 2023.3.24)  28 MAR 2023 19:02
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdflatex 2023.3.24)  28 MAR 2023 23:08
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -691,7 +691,47 @@ Package: nicefrac 1998/08/04 v0.9b Nice fractions
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
 Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
-)) (./experiment1.aux
+))
+(/usr/share/texlive/texmf-dist/tex/latex/caption/subcaption.sty
+Package: subcaption 2020/10/07 v1.3j Sub-captions (AR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2020/10/26 v3.5g Customizing captions (AR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2020/10/21 v2.2e caption3 kernel (AR)
+\captionmargin=\dimen312
+\captionmargin@=\dimen313
+\captionwidth=\dimen314
+\caption@tempdima=\dimen315
+\caption@indent=\dimen316
+\caption@parindent=\dimen317
+\caption@hangindent=\dimen318
+Package caption Info: Standard document class detected.
+)
+\c@caption@flags=\count337
+\c@continuedfloat=\count338
+Package caption Info: float package is loaded.
+)
+\c@subfigure=\count339
+\c@subtable=\count340
+)
+(./experiment1.aux
+
+LaTeX Warning: Label `fig1' multiply defined.
+
+
+LaTeX Warning: Label `fig1' multiply defined.
+
+
+LaTeX Warning: Label `fig1' multiply defined.
+
+
+LaTeX Warning: Label `fig1' multiply defined.
+
+
+LaTeX Warning: Label `fig1' multiply defined.
+
 
 LaTeX Warning: Label `fig1' multiply defined.
 
@@ -714,16 +754,16 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 30.
 LaTeX Font Info:    ... okay on input line 30.
  (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count337
-\scratchdimen=\dimen312
+\scratchcounter=\count341
+\scratchdimen=\dimen319
 \scratchbox=\box68
-\nofMPsegments=\count338
-\nofMParguments=\count339
+\nofMPsegments=\count342
+\nofMParguments=\count343
 \everyMPshowfont=\toks39
-\MPscratchCnt=\count340
-\MPscratchDim=\dimen313
-\MPnumerator=\count341
-\makeMPintoPDFobject=\count342
+\MPscratchCnt=\count344
+\MPscratchDim=\dimen320
+\MPnumerator=\count345
+\makeMPintoPDFobject=\count346
 \everyMPtoPDFconversion=\toks40
 )
 *geometry* detected driver: pdftex
@@ -759,6 +799,8 @@ LaTeX Font Info:    ... okay on input line 30.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <17.28> on input line 43.
 LaTeX Font Info:    External font `cmex10' loaded for size
@@ -786,134 +828,146 @@ Package pdftex.def Info: ./images//logo.png  used on input line 87.
 LaTeX Warning: Citation `ref1' on page 1 undefined on input line 88.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 94--97
+LaTeX Warning: Citation `ref1' on page 1 undefined on input line 88.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 99--102
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 98--99
+Underfull \hbox (badness 10000) in paragraph at lines 103--104
 
  []
 
 [1
 
  <./images//logo.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 101--103
+Underfull \hbox (badness 10000) in paragraph at lines 105--107
 
  []
 
 <./images//F1.png, id=24, 417.35925pt x 140.9265pt>
 File: ./images//F1.png Graphic file (type png)
 <use ./images//F1.png>
-Package pdftex.def Info: ./images//F1.png  used on input line 106.
+Package pdftex.def Info: ./images//F1.png  used on input line 110.
 (pdftex.def)             Requested size: 364.19667pt x 122.97922pt.
 <./images//EasyEDA_part_1_F1.png, id=25, 1054.6602pt x 556.479pt>
 File: ./images//EasyEDA_part_1_F1.png Graphic file (type png)
 <use ./images//EasyEDA_part_1_F1.png>
 Package pdftex.def Info: ./images//EasyEDA_part_1_F1.png  used on input line 11
-2.
+6.
 (pdftex.def)             Requested size: 455.24411pt x 240.19835pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 116--118
+Underfull \hbox (badness 10000) in paragraph at lines 120--122
 
  []
 
 <./images//F2.png, id=26, 469.15276pt x 202.95825pt>
 File: ./images//F2.png Graphic file (type png)
 <use ./images//F2.png>
-Package pdftex.def Info: ./images//F2.png  used on input line 121.
+Package pdftex.def Info: ./images//F2.png  used on input line 125.
 (pdftex.def)             Requested size: 364.19667pt x 157.56044pt.
 [2 <./images//F1.png> <./images//EasyEDA_part_1_F1.png>]
 <./images//EasyEDA_part_1_F2.png, id=32, 6381.8425pt x 2373.86874pt>
 File: ./images//EasyEDA_part_1_F2.png Graphic file (type png)
 <use ./images//EasyEDA_part_1_F2.png>
-Package pdftex.def Info: ./images//EasyEDA_part_1_F2.png  used on input line 12
+Package pdftex.def Info: ./images//EasyEDA_part_1_F2.png  used on input line 13
 7.
 (pdftex.def)             Requested size: 455.24411pt x 169.3029pt.
- [3 <./images//F2.png> <./images//EasyEDA_part_1_F2.png>]
-<./images//f1truth.png, id=38, 145.14224pt x 158.994pt>
+<./images//f1truth.png, id=33, 145.14224pt x 158.994pt>
 File: ./images//f1truth.png Graphic file (type png)
 <use ./images//f1truth.png>
-Package pdftex.def Info: ./images//f1truth.png  used on input line 135.
+Package pdftex.def Info: ./images//f1truth.png  used on input line 145.
 (pdftex.def)             Requested size: 113.81102pt x 124.67227pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 132--137
+Underfull \hbox (badness 10000) in paragraph at lines 142--147
+
+ []
+
+[3 <./images//F2.png> <./images//EasyEDA_part_1_F2.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 148--150
+
+ []
+
+File: ./images//f1truth.png Graphic file (type png)
+<use ./images//f1truth.png>
+Package pdftex.def Info: ./images//f1truth.png  used on input line 154.
+(pdftex.def)             Requested size: 113.81102pt x 124.67227pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 151--157
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 138--139
+Underfull \hbox (badness 10000) in paragraph at lines 160--161
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 142--143
-
- []
-
-<./images//Logisim_part_2.png, id=39, 607.26875pt x 185.69376pt>
+[4 <./images//f1truth.png>]
+<./images//Logisim_part_2.png, id=44, 607.26875pt x 185.69376pt>
 File: ./images//Logisim_part_2.png Graphic file (type png)
 <use ./images//Logisim_part_2.png>
-Package pdftex.def Info: ./images//Logisim_part_2.png  used on input line 153.
+Package pdftex.def Info: ./images//Logisim_part_2.png  used on input line 171.
 (pdftex.def)             Requested size: 364.19667pt x 111.36894pt.
-<./images//EasyEDA_part_2.png, id=40, 4706.58376pt x 2466.21375pt>
+<./images//EasyEDA_part_2.png, id=45, 4706.58376pt x 2466.21375pt>
 File: ./images//EasyEDA_part_2.png Graphic file (type png)
 <use ./images//EasyEDA_part_2.png>
-Package pdftex.def Info: ./images//EasyEDA_part_2.png  used on input line 159.
+Package pdftex.def Info: ./images//EasyEDA_part_2.png  used on input line 177.
 (pdftex.def)             Requested size: 455.24411pt x 238.50745pt.
-[4 <./images//f1truth.png> <./images//Logisim_part_2.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 177--178
+
+Underfull \hbox (badness 10000) in paragraph at lines 195--196
+
+ []
+
+[5 <./images//Logisim_part_2.png> <./images//EasyEDA_part_2.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 202--203
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 184--185
+Underfull \hbox (badness 10000) in paragraph at lines 204--205
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 186--187
+Underfull \hbox (badness 10000) in paragraph at lines 206--207
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 188--189
+Underfull \hbox (badness 10000) in paragraph at lines 208--209
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 190--191
+Underfull \hbox (badness 10000) in paragraph at lines 210--211
 
  []
 
-[5 <./images//EasyEDA_part_2.png>] [6]
-<./images//F3comp.png, id=55, 454.0965pt x 204.16275pt>
+<./images//F3comp.png, id=52, 454.0965pt x 204.16275pt>
 File: ./images//F3comp.png Graphic file (type png)
 <use ./images//F3comp.png>
-Package pdftex.def Info: ./images//F3comp.png  used on input line 195.
+Package pdftex.def Info: ./images//F3comp.png  used on input line 214.
 (pdftex.def)             Requested size: 364.19667pt x 163.74162pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 192--197
-
- []
-
-<./images//EasyEDA_part_3.png, id=56, 6766.27875pt x 2463.2025pt>
+<./images//EasyEDA_part_3.png, id=53, 6766.27875pt x 2463.2025pt>
 File: ./images//EasyEDA_part_3.png Graphic file (type png)
 <use ./images//EasyEDA_part_3.png>
-Package pdftex.def Info: ./images//EasyEDA_part_3.png  used on input line 201.
+Package pdftex.def Info: ./images//EasyEDA_part_3.png  used on input line 220.
 (pdftex.def)             Requested size: 455.24411pt x 165.714pt.
-<./images//truth.png, id=57, 177.66376pt x 237.2865pt>
+[6 <./images//F3comp.png>]
+<./images//truth.png, id=58, 177.66376pt x 237.2865pt>
 File: ./images//truth.png Graphic file (type png)
 <use ./images//truth.png>
-Package pdftex.def Info: ./images//truth.png  used on input line 208.
+Package pdftex.def Info: ./images//truth.png  used on input line 227.
 (pdftex.def)             Requested size: 136.57462pt x 182.41426pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 205--211
+Underfull \hbox (badness 10000) in paragraph at lines 224--230
 
  []
 
-[7 <./images//F3comp.png> <./images//EasyEDA_part_3.png>]
-Overfull \hbox (60.40924pt too wide) in paragraph at lines 216--219
+
+Overfull \hbox (60.40924pt too wide) in paragraph at lines 235--238
 []\OT1/cmr/bx/n/12 Part 4: \OT1/cmr/m/n/12 A ba-sic log-i-cal func-tion $\OML/c
 mm/m/it/12 F[]$ \OT1/cmr/m/n/12 is de-fined as fol-lows. $\OML/cmm/m/it/12 F[]\
 OT1/cmr/m/n/12 (\OML/cmm/m/it/12 a; b; c; d\OT1/cmr/m/n/12 ) = \OMS/cmsy/m/n/12
@@ -924,51 +978,119 @@ m/n/12 9\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 10\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 216--219
+Underfull \hbox (badness 10000) in paragraph at lines 235--238
 
  []
 
-\g__nicematrix_max_cell_width_dim=\dimen314
+\g__nicematrix_max_cell_width_dim=\dimen321
 \l__nicematrix_cell_box=\box69
-\c@iRow=\count343
-\c@jCol=\count344
-\g__nicematrix_row_total_int=\count345
-\g__nicematrix_col_total_int=\count346
-\l__nicematrix_left_delim_dim=\dimen315
-\l__nicematrix_right_delim_dim=\dimen316
+\c@iRow=\count347
+\c@jCol=\count348
+\g__nicematrix_row_total_int=\count349
+\g__nicematrix_col_total_int=\count350
+\l__nicematrix_left_delim_dim=\dimen322
+\l__nicematrix_right_delim_dim=\dimen323
 \l__nicematrix_the_array_box=\box70
-\g__nicematrix_dp_row_zero_dim=\dimen317
-\g__nicematrix_ht_row_zero_dim=\dimen318
-\g__nicematrix_ht_row_one_dim=\dimen319
-\g__nicematrix_dp_ante_last_row_dim=\dimen320
-\g__nicematrix_ht_last_row_dim=\dimen321
-\g__nicematrix_dp_last_row_dim=\dimen322
+\g__nicematrix_dp_row_zero_dim=\dimen324
+\g__nicematrix_ht_row_zero_dim=\dimen325
+\g__nicematrix_ht_row_one_dim=\dimen326
+\g__nicematrix_dp_ante_last_row_dim=\dimen327
+\g__nicematrix_ht_last_row_dim=\dimen328
+\g__nicematrix_dp_last_row_dim=\dimen329
 \g__nicematrix_block_box_1_box=\box71
 \g__nicematrix_block_box_2_box=\box72
 \g__nicematrix_block_box_3_box=\box73
 \g__nicematrix_block_box_4_box=\box74
-\g__nicematrix_ddots_int=\count347
-\g__nicematrix_iddots_int=\count348
-\g__nicematrix_delta_x_one_dim=\dimen323
-\g__nicematrix_delta_y_one_dim=\dimen324
-\g__nicematrix_delta_x_two_dim=\dimen325
-\g__nicematrix_delta_y_two_dim=\dimen326
-\l__nicematrix_initial_i_int=\count349
-\l__nicematrix_initial_j_int=\count350
-\l__nicematrix_final_i_int=\count351
-\l__nicematrix_final_j_int=\count352
-<./images//Logisim_part_4.png, id=63, 547.04375pt x 207.77625pt>
+\g__nicematrix_ddots_int=\count351
+\g__nicematrix_iddots_int=\count352
+\g__nicematrix_delta_x_one_dim=\dimen330
+\g__nicematrix_delta_y_one_dim=\dimen331
+\g__nicematrix_delta_x_two_dim=\dimen332
+\g__nicematrix_delta_y_two_dim=\dimen333
+\l__nicematrix_initial_i_int=\count353
+\l__nicematrix_initial_j_int=\count354
+\l__nicematrix_final_i_int=\count355
+\l__nicematrix_final_j_int=\count356
+[7 <./images//EasyEDA_part_3.png> <./images//truth.png>]
+<./images//Logisim_part_4.png, id=64, 547.04375pt x 207.77625pt>
 File: ./images//Logisim_part_4.png Graphic file (type png)
 <use ./images//Logisim_part_4.png>
-Package pdftex.def Info: ./images//Logisim_part_4.png  used on input line 278.
+Package pdftex.def Info: ./images//Logisim_part_4.png  used on input line 299.
 (pdftex.def)             Requested size: 364.19667pt x 138.32797pt.
-[8 <./images//truth.png>]
-<./images//EasyEDA_part_4.png, id=68, 6768.28625pt x 2463.2025pt>
+<./images//EasyEDA_part_4.png, id=65, 6768.28625pt x 2463.2025pt>
 File: ./images//EasyEDA_part_4.png Graphic file (type png)
 <use ./images//EasyEDA_part_4.png>
-Package pdftex.def Info: ./images//EasyEDA_part_4.png  used on input line 284.
+Package pdftex.def Info: ./images//EasyEDA_part_4.png  used on input line 305.
 (pdftex.def)             Requested size: 455.24411pt x 165.67642pt.
- [9 <./images//Logisim_part_4.png> <./images//EasyEDA_part_4.png>]
+ [8 <./images//Logisim_part_4.png>]
+<./images//switch.png, id=70, 429.40425pt x 130.68825pt>
+File: ./images//switch.png Graphic file (type png)
+<use ./images//switch.png>
+Package pdftex.def Info: ./images//switch.png  used on input line 325.
+(pdftex.def)             Requested size: 273.14923pt x 83.13765pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 321--328
+
+ []
+
+[9 <./images//EasyEDA_part_4.png>]
+<./images//display2.png, id=76, 687.16725pt x 429.40425pt>
+File: ./images//display2.png Graphic file (type png)
+<use ./images//display2.png>
+Package pdftex.def Info: ./images//display2.png  used on input line 333.
+(pdftex.def)             Requested size: 364.19667pt x 227.58316pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 337--338
+
+ []
+
+<./images//display7.png, id=77, 686.565pt x 429.40425pt>
+File: ./images//display7.png Graphic file (type png)
+<use ./images//display7.png>
+Package pdftex.def Info: ./images//display7.png  used on input line 342.
+(pdftex.def)             Requested size: 364.19667pt x 227.77972pt.
+[10 <./images//switch.png> <./images//display2.png>] [11 <./images//display7.pn
+g>]
+<./images//part5.png, id=88, 7307.3pt x 2268.475pt>
+File: ./images//part5.png Graphic file (type png)
+<use ./images//part5.png>
+Package pdftex.def Info: ./images//part5.png  used on input line 351.
+(pdftex.def)             Requested size: 409.71692pt x 127.17218pt.
+<./images//sine_wave_1.jpg, id=89, 4015.0pt x 3011.25pt>
+File: ./images//sine_wave_1.jpg Graphic file (type jpg)
+<use ./images//sine_wave_1.jpg>
+Package pdftex.def Info: ./images//sine_wave_1.jpg  used on input line 366.
+(pdftex.def)             Requested size: 216.24025pt x 162.15019pt.
+<./images//sine_wave_2.jpg, id=90, 4015.0pt x 3011.25pt>
+File: ./images//sine_wave_2.jpg Graphic file (type jpg)
+<use ./images//sine_wave_2.jpg>
+Package pdftex.def Info: ./images//sine_wave_2.jpg  used on input line 370.
+(pdftex.def)             Requested size: 216.24025pt x 162.15019pt.
+<./images//square_wave_1.jpg, id=91, 4015.0pt x 3011.25pt>
+File: ./images//square_wave_1.jpg Graphic file (type jpg)
+<use ./images//square_wave_1.jpg>
+Package pdftex.def Info: ./images//square_wave_1.jpg  used on input line 378.
+(pdftex.def)             Requested size: 216.24025pt x 162.15019pt.
+<./images//square_wave_2.jpg, id=92, 4015.0pt x 3011.25pt>
+File: ./images//square_wave_2.jpg Graphic file (type jpg)
+<use ./images//square_wave_2.jpg>
+Package pdftex.def Info: ./images//square_wave_2.jpg  used on input line 382.
+(pdftex.def)             Requested size: 216.24025pt x 162.15019pt.
+<./images//triangle_wave_1.jpg, id=93, 4015.0pt x 3011.25pt>
+File: ./images//triangle_wave_1.jpg Graphic file (type jpg)
+<use ./images//triangle_wave_1.jpg>
+Package pdftex.def Info: ./images//triangle_wave_1.jpg  used on input line 390.
+
+(pdftex.def)             Requested size: 216.24025pt x 162.15019pt.
+<./images//triangle_wave_2.jpg, id=94, 4015.0pt x 3011.25pt>
+File: ./images//triangle_wave_2.jpg Graphic file (type jpg)
+<use ./images//triangle_wave_2.jpg>
+Package pdftex.def Info: ./images//triangle_wave_2.jpg  used on input line 394.
+
+(pdftex.def)             Requested size: 216.24025pt x 162.15019pt.
+ [12 <./images//sine_wave_1.jpg> <./images//sine_wave_2.jpg> <./images//square_
+wave_1.jpg> <./images//square_wave_2.jpg> <./images//part5.png>] [13 <./images/
+/triangle_wave_1.jpg> <./images//triangle_wave_2.jpg>] [14]
 No file experiment1.bbl.
 (./experiment1.aux)
 
@@ -979,25 +1101,25 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 18039 strings out of 479304
- 387819 string characters out of 5869779
- 685869 words of memory out of 5000000
- 34868 multiletter control sequences out of 15000+600000
+ 19397 strings out of 479304
+ 414402 string characters out of 5869779
+ 704422 words of memory out of 5000000
+ 36206 multiletter control sequences out of 15000+600000
  408636 words of font info for 44 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 102i,20n,103p,449b,796s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 102i,20n,103p,1389b,796s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texli
 ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/tex
 mf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts
-/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/
-public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
-msfonts/cm/cmsy10.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pf
-b>
-Output written on experiment1.pdf (11 pages, 1063574 bytes).
+t/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmsy10.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb>
+Output written on experiment1.pdf (16 pages, 16301881 bytes).
 PDF statistics:
- 99 PDF objects out of 1000 (max. 8388607)
- 52 compressed objects within 1 object stream
+ 133 PDF objects out of 1000 (max. 8388607)
+ 66 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 78 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 128 words of extra memory for PDF output out of 10000 (max. 10000000)
 
