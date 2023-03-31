@@ -75,24 +75,51 @@
 
 \section{INTRODUCTION [10 points]}
 
-Briefly describe what you have done during the experiment.
+In this experiment, we were introduced to Complete Analogue Digital Electronic Trainer (C.A.D.E.T.), recalled fundamental principles of Boolean algebra and electronics, experimented with them by building digital circuits and learned how to use a function generator and an oscilloscope.  
 
 \section{MATERIALS AND METHODS [40 points]}
-Answer all questions and provide everything that are indicated in the “Report” section of the related experiment in “Experiments Booklet”.
-Edit following sub-heading as you wish.
+
 
 \subsection{Preliminary}
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.5\textwidth]{logo.png}	
-	\caption{An Example Figure Caption\cite{ref1}}
-	\label{fig1}
+
+C.A.D.E.T. uses mains electricity and provides different levels of DC voltage, such as +12V, -12V, +5V, -5V, 0V, and many more. In this experiment, we have TTL logic level integrated circuits, therefore only 0V and +5V supplies are used. Trainer has many SPDT switches, most of are already connected and provide switching between high and low. Likewise, there are built-in LED's for high and low probe, which will be used to observe the function outputs. For displaying binary numbers, there are two BCD to seven-segment converter ICs and the seven segment displays themselves. A large area in the middle of the trainer is dedicated for prototyping on breadboards, which allow flexibility by not having the power rails connected by default. \\
+
+On other side, there is a function generator, providing:
+\begin{itemize}
+ \item Frequencies up to 200kHz, meaning that the function repeats itself up to two hundred thousand times per second; 
+ \item Different wave forms such as triangle, square and sine; 
+ \item Amplitude control, which affects peak-to-peak voltage, difference in potential from the lowest peak to the highest, while the amplitude is a half of that;
+ \item Attenuator, device that reduces the power of signal without distorting the waveform.
+\end{itemize}
+
+The oscilloscope stands apart and has a display, two input channels, horizontal and vertical controls, and many other bottons which ease signal analysis. The display has square divisions for interpreting the values, and also can show root mean square (RMS) value of the input function's voltage and current. Oscilloscopes calculate it using this formula:
+
+\[f_{rms} = \sqrt{\frac{1}{T} \int_{0}^{T} f^2(t) dt}\] \\
+
+The following examples will help us refresh our knowledge of axioms and theorems of Boolean algebra:
+
+\begin{align*}
+& a + a \cdot b = \\
+= & a \cdot (1 + 1 \cdot b) = \tag{Distributivity} \\
+= & a \cdot (1) = \tag{Dominance} \\
+= & a \tag{Identity axiom}
+\end{align*}
+
+\begin{align*}
+  (&a+b) \cdot (a + \overline{b}) = \\
+= & a + b \cdot \overline{b} = \tag{Distributivity} \\
+= & a + 0 = \tag{Inverse axiom} \\
+= & a \tag{Identity axiom} \\
+\end{align*}
+
+Dual of the equality obtained in the first example is $a \cdot (a+b) = a$, and is proved using just one step, the absorption theorem. Dual of the second equality is $ab + a\overline{b} = a$. By applying distributivity axiom, $a(b+\overline{b})$ is obtained. $b + \overline{b}$ is just $1$, according to the inverse property. And finally, according to the identity axiom, $a \cdot 1 = a$. \\ 
+
+In this experiment, logic functions are implemented using these integrated circuits:
  \begin{itemize}
-       \item 74HC04: Hex Inverters IC.
-       \item 74HC08: 2-input Positive-AND gates IC.
-       \item 74HC32: 2-input Positive-OR gates IC.
+       \item 74xx04: Hex Inverters IC.
+       \item 74xx08: 2-input Positive-AND gates IC.
+       \item 74xx32: 2-input Positive-OR gates IC.
    \end{itemize}
-\end{figure}
 
 \subsection{Experiment}
 \begin{itemize}
@@ -125,13 +152,7 @@ Edit following sub-heading as you wish.
         \includegraphics[width=0.8\textwidth]{F2.png}	
         \caption{Design of \textbf{$F_2$} in Logisim}
    \end{figure}
-   
-   \textbf{Functions $F_1$ and $F_2$ designed and implemented using ICs:}
     
-   \begin{itemize}
-       \item 74HC08: 2-input Positive-AND gates IC.
-       \item 74HC32: 2-input Positive-OR gates IC.
-   \end{itemize}
    \begin{figure}[H]
     \centering
         \includegraphics[width=\textwidth]{EasyEDA_part_1_F2.png}	
@@ -148,12 +169,19 @@ Edit following sub-heading as you wish.
    Our implementations of $F_1$ and $F_2$ are compatible with their truth table.\\
    Moreover, we can construct the same implementations with the help of \textbf{SPDT} switch which consists of three terminals, one is output and others are input terminals. Using switch button of \textbf{SPDT}, we are able to determine which input terminal will be connected to the output terminal.\\
 
-   \textbf{Implementations of $F_1$ and $F_2$ using SPDT switch:}\\
+   \textbf{Design of $F_1$ using SPDT switch:}\\
    \begin{figure}[H]
     \centering
-        \includegraphics[width=0.25\textwidth]{f1truth.png}	
-        \caption{Implementations of $F_1$ and $F_2$ using SPDT switch}
+        \includegraphics[width=0.9\textwidth]{F1ICspdt.png}	
+        \caption{Design of $F_1$ using SPDT switch}
         \label{fig1}
+   \end{figure}
+   \textbf{Design of $F_2$ using SPDT switch:}\\
+   \begin{figure}[H]
+    \centering
+        \includegraphics[width=0.9\textwidth]{F2ICspdt.png}	
+        \caption{Design of $F_2$ using SPDT switch}
+        
    \end{figure}
 \end{itemize}
 \begin{itemize}
@@ -201,13 +229,13 @@ As it is clear from the table, the last two columns, which are the original expr
 \begin{itemize}
     \item \textbf{Part 3:} $F_3 (a, b, c) = ab + \overline{a}c$ is given. First, determine the complement of the given function ($F_3$). Then, implement the circuit which realizes the complementary function ($\overline{F_3}$). Validate your implementation by using the truth table.\\
 
-    \textbf{Step 1:} In the first step, we find the complement of the given function $F_3$ by applying \textbf{De Morgan's} rule.\\
+    In the first step, we find the complement of the given function $F_3$ by applying \textbf{De Morgan's} rule.\\
     
-    Step 1.1: $\overline{F_3 (a, b, c)} = \overline{ab + \overline{a}c}$ \\
+    $\overline{F_3 (a, b, c)} = \overline{ab + \overline{a}c}$ \\
     
-    Step 1.2: $\overline{F_3 (a, b, c)} = (\overline{a} + \overline{b}) . (a + \overline{c})$\\
+    $\overline{F_3 (a, b, c)} = (\overline{a} + \overline{b}) . (a + \overline{c})$\\
     
-    \textbf{Step 2:} In the second step, we implement the circuit which realizes the function $\overline{F_3}$ using logic gates and ICs.\\
+    In the second step, we implement the circuit which realizes the function $\overline{F_3}$ using logic gates and ICs.\\
 
     \begin{figure}[H]
     \centering
@@ -221,12 +249,12 @@ As it is clear from the table, the last two columns, which are the original expr
         \caption{Design of \textbf{$\overline{F_3}$} in EasyEDA}        
 	\end{figure}   
    
-   \textbf{Step 3:} In the third step, we validate our implementation of the function $\overline{F_3}$ using truth table.\\
+   In the third step, we validate our implementation of the function $\overline{F_3}$ using truth table.\\
     \begin{figure}[H]
     \centering
         \includegraphics[width=0.3\textwidth]{truth.png}	
         \caption{Truth table of \textbf{$\overline{F_3}$}}
-        \label{fig1}
+        
    \end{figure}
     According to the truth table, our implementation is correct.
 \end{itemize}
@@ -324,7 +352,7 @@ With the formula obtained, the following circuits are designed:
     \centering
         \includegraphics[width=0.6\textwidth]{switch.png}	
         \caption{Switch component}
-        \label{fig1}
+        
    \end{figure}
    
    Each switch corresponds to one single digit in our binary number. For instance, S0 (switch 0) determines the value of first digit in our binary number. If S0 is OFF, then first digit of the binary number is also 0. To illustrate the working principle of switches in a better way, we can use the schema below:
@@ -332,7 +360,7 @@ With the formula obtained, the following circuits are designed:
     \centering
         \includegraphics[width=0.8\textwidth]{display2.png}	
         \caption{How to display "2" using switches}
-        \label{fig1}
+        
    \end{figure}
    Therefore, in order to display "2", we set S1 to 1 (ON) and others are set to 0 (OFF).\\
 
@@ -341,16 +369,15 @@ With the formula obtained, the following circuits are designed:
     \centering
         \includegraphics[width=0.8\textwidth]{display7.png}	
         \caption{How to display "7" using switches}
-        \label{fig1}
+        
    \end{figure}
 
-   \newpage
    \textbf{Implementation of seven segment display using ICs:}
    \begin{figure}[H]
     \centering
         \includegraphics[width=0.9\textwidth]{part5.png}	
         \caption{How to display "27" in two segment display using 8 switches}
-        \label{fig1}
+        
    \end{figure}
     \end{itemize}
     
@@ -360,7 +387,7 @@ With the formula obtained, the following circuits are designed:
     \item \textbf{Part 6:}
     C.A.D.E.T. has a built-in 200kHz function generator with a number of knobs, which adjust the function to any desired characteristics. By changing the parameters, functions of different shapes were obtained:
     
-\begin{figure}
+\begin{figure}[H]
 \begin{subfigure}{0.5\textwidth}
 \centering
 \includegraphics[width=.95\linewidth]{sine_wave_1.jpg}
@@ -372,7 +399,7 @@ With the formula obtained, the following circuits are designed:
 \caption{Sine waves generated}
 \end{figure}
 
-\begin{figure}
+\begin{figure}[H]
 \begin{subfigure}{0.5\textwidth}
 \centering
 \includegraphics[width=.95\linewidth]{square_wave_1.jpg}
