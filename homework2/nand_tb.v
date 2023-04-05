@@ -1,4 +1,4 @@
-`include "part_1_3_6.v"
+`include "part_1_3_6_7.v"
 
 module nand_tb;
   reg a, b;

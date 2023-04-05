@@ -1,4 +1,4 @@
-`include "part_1_3_6.v"
+`include "part_1_3_6_7.v"
 
 module sr_latch_tb;
   reg s, r;
