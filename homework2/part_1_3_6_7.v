@@ -45,17 +45,32 @@ module d_ff_negedge (
 endmodule
 
 // Part 6
-/*module synch_up_counter (
-  input clk,
-  output[3:0] a
-);
-  jk_ff jk0(.clk(clk), .q(a[0]));
-  assign {jk0.j, jk0.k} = 2'b11;
-  jk_ff jk1(.clk(clk), .j(a[0]), .k(a[0]), .q(a[1]));
-  jk_ff jk2(.clk(clk), .j(a[1] & a[0]), .k(a[1] & a[0]), .q(a[2]));
-  jk_ff jk3(.clk(clk), .j(a[2] & a[1]), .k(a[2] & a[1]), .q(a[3]));
+module sync_up_counter(input clk, input reset, output [3:0] out);
+    JK_FF jk1(.J(1), .K(1), .reset(reset | (out[0]&out[1]&out[2]&out[3])), .clk(clk), .Q(out[0]));
+    JK_FF jk2(.J(out[0]), .K(out[0]), .reset(reset | (out[0]&out[1]&out[2]&out[3])), .clk(clk), .Q(out[1]));
+    JK_FF jk3(.J(out[0]&out[1]), .K(out[0]&out[1]), .reset(reset | (out[0]&out[1]&out[2]&out[3])), .clk(clk), .Q(out[2]));
+    JK_FF jk4(.J(out[0]&out[1]&out[2]), .K(out[0]&out[1]&out[2]), .reset(reset | (out[0]&out[1]&out[2]&out[3])), .clk(clk), .Q(out[3]));
 endmodule
-*/
+
+//PART6 TB
+module sync_up_countr_tb();
+    //Inputs
+    reg clk, reset;
+    //Output
+    wire [3:0] out;
+    
+    sync_up_counter uut (.clk(clk), .reset(reset), .out(out));
+    
+    initial clk = 1;
+    always #5 clk = ~clk;
+	
+    initial begin
+        // Reset
+        reset = 1; #1;
+        // Release reset
+        reset = 0;
+    end
+endmodule
 
 module mux_2_1(
   input i0,
