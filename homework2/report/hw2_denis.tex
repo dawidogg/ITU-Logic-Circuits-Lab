@@ -57,6 +57,8 @@
 	
 	where $Q(t)$ and $Q(t+1)$, $\overline{Q}(t)$ and $\overline{Q}(t+1)$ represent previous and next states, $\phi$ is any state and \texttiming{LH} symbol means rising edge, i.e. transition from low to high. \\
 	
+	\newpage
+
 	\textbf{Part 1:}
 	\begin{figure}[h]
 		\centering
@@ -79,6 +81,8 @@
 	\end{align*}
 
 	In the final step, $\bar{R}$ is omitted because state $S = 1, R = 1$ is forbidden and should never happen. Therefore omitting it does not change the truth table. To summarize, SR Latch's output is $1$ whenever S is on and R is off, is $0$ whenever R is on and S is off, and it maintains the previous state if both S and R go low. It is therefore called a memory circuit. \\
+
+	\newpage
 	
 	\textbf{Part 3:}
 	\begin{figure}[h]
@@ -89,6 +93,8 @@
 	\end{figure}	
 	
 	As it is seen from the wave form, D flip-flop can change state only on the falling clock edge.
+
+\newpage
 
 	\textbf{Part 6:}
 	\begin{figure}[h]
@@ -121,7 +127,45 @@
 	\texttiming{LH} & 0 & $\{1,\ \ 1,\ \ 1,\ \  0\}$ & $\{0,\ \ 0,\ \ 0,\ \  0\}$  \\ 
 	
 	\hline
-\end{tabular}		
+\end{tabular}	
+	
+\newpage
+
+\textbf{Part 7:}
+	To implement pulse width modulation with a circular shift register, there must be a multiplexer which will choose between the input wave pattern and output of previous flip flop, and output the signal as input to the next flip flop. When load flag is low, flip flops behave like a circular shift register. When load flag becomes high, circular transmission is stopped and all flip flops are written to. This is the design of 2:1 multiplexer we used: \\
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=0.6\textwidth]{mux.png}
+		\caption{2:1 multiplexer design in Logisim}
+		\centering
+	\end{figure}	
+	
+It was also described and simulated with Verilog: \\	
+	
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=1\textwidth]{part7_mux.png}
+		\caption{2:1 multiplexer simulation in Verilog}
+		\centering
+	\end{figure}	
+	
+	The pulse generator itself is too long to fit on the page, and with that reason the following diagram is it's smaller version with same behaviour. Because D flip flops are negative edge triggered, the clock is inverted in order to make it a positive edge triggered device: \\
+	
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=1\textwidth]{pwm.png}
+		\caption{Pulse generator design in Logisim}
+		\centering
+	\end{figure}	
+	
+	In the Verilog description we prepared, pulse generator has a 16-bit input as required. The result of simulation confirms it can deliver various pulses, such as half, quarter, one eigth of clock frequency and signals with 1/7, 3/13, 11/5 pulse-gap duration rate: \\
+	
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=1\textwidth]{part7.png}
+		\caption{Pulse generator simulation in Verilog}
+		\centering
+	\end{figure}	
 	
 
 \end{document}
