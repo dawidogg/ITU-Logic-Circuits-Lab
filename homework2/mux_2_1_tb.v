@@ -10,6 +10,6 @@ module mux_2_1_tb;
     $display("a, b, s, out");
     $monitor("%b %b %b %b", a, b, s, out);
     {a, b, s} = 3'b000;
-    repeat(7) #5 {a, b, s} += 1;
+    repeat(7) #5 {a, b, s} = {a,b,s} + 1;
   end
 endmodule
