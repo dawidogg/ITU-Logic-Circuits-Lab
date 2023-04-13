@@ -1,0 +1,12 @@
+\penalty \@secpenalty \relax \begingroup \skip@ 1.0em plus\p@ \relax \vskip \skip@ \endgroup \@tempdima 1.5em\relax \begingroup \parindent \z@ \rightskip 1.55em\parfillskip -1.55em\unhbox \voidb@x \bfseries \advance \leftskip \@tempdima \hskip -\leftskip \hbox to\@tempdima {\hfil }FRONT COVER\nobreak \hfil \nobreak \hbox to1.55em{\hss \kern -\p@ \kern \p@ }\par \endgroup 
+\penalty \@secpenalty \relax \begingroup \skip@ 1.0em plus\p@ \relax \vskip \skip@ \endgroup \@tempdima 1.5em\relax \begingroup \parindent \z@ \rightskip 1.55em\parfillskip -1.55em\unhbox \voidb@x \bfseries \advance \leftskip \@tempdima \hskip -\leftskip \hbox to\@tempdima {\hfil }CONTENTS\nobreak \hfil \nobreak \hbox to1.55em{\hss \kern -\p@ \kern \p@ }\par \endgroup 
+\contentsline {section}{\numberline {1}INTRODUCTION [10 points]}{1}{}%
+\contentsline {section}{\numberline {2}MATERIALS AND METHODS [40 points]}{1}{}%
+\contentsline {subsection}{\numberline {2.1}Preliminary}{1}{}%
+\contentsline {subsection}{\numberline {2.2}Experiment}{1}{}%
+\contentsline {subsubsection}{\numberline {2.2.1}Experiment - Part 1}{1}{}%
+\contentsline {subsubsection}{\numberline {2.2.2}Experiment - Part 2}{1}{}%
+\contentsline {subsubsection}{\numberline {2.2.3}Experiment - Part 3}{1}{}%
+\contentsline {section}{\numberline {3}RESULTS [15 points]}{2}{}%
+\contentsline {section}{\numberline {4}DISCUSSION [25 points]}{2}{}%
+\contentsline {section}{\numberline {5}CONCLUSION [10 points]}{2}{}%
