@@ -1,0 +1,11 @@
+\penalty \@secpenalty \relax \begingroup \setlength \skip@ {1.0em plus\p@ }\vskip \skip@ \endgroup \setlength \@tempdima {1.5em}\begingroup \parindent \z@ \rightskip 1.55em\parfillskip -1.55em\unhbox \voidb@x \bfseries \advance \leftskip \@tempdima \hskip -\leftskip \hbox to\@tempdima {\hfil }FRONT COVER\nobreak \hfil \nobreak \hbox to1.55em{\hss \kern -\p@ \kern \p@ }\par \endgroup 
+\penalty \@secpenalty \relax \begingroup \setlength \skip@ {1.0em plus\p@ }\vskip \skip@ \endgroup \setlength \@tempdima {1.5em}\begingroup \parindent \z@ \rightskip 1.55em\parfillskip -1.55em\unhbox \voidb@x \bfseries \advance \leftskip \@tempdima \hskip -\leftskip \hbox to\@tempdima {\hfil }CONTENTS\nobreak \hfil \nobreak \hbox to1.55em{\hss \kern -\p@ \kern \p@ }\par \endgroup 
+\contentsline {section}{\numberline {1}INTRODUCTION}{1}{}%
+\contentsline {section}{\numberline {2}MATERIALS, METHODS AND RESULTS}{1}{}%
+\contentsline {subsection}{\numberline {2.1}Part 1}{1}{}%
+\contentsline {subsection}{\numberline {2.2}Part 2}{2}{}%
+\contentsline {subsection}{\numberline {2.3}Part 3}{4}{}%
+\contentsline {subsection}{\numberline {2.4}Part 4}{5}{}%
+\contentsline {subsection}{\numberline {2.5}Part 5}{6}{}%
+\contentsline {subsection}{\numberline {2.6}Part 6}{6}{}%
+\contentsline {section}{\numberline {3}CONCLUSION}{6}{}%
