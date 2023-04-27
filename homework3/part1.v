@@ -70,3 +70,44 @@ module part4(
   };
   part3 memory[7:0](clk, in, re, we, (reset & cs), (decoded_adress & {8{cs}}), out);
 endmodule
+
+module part5(
+  input clk,
+  input[7:0] in,
+  input[4:0] a,
+  input reset,
+  input re,
+  input we,
+  output[7:0] out
+);
+  wire[3:0] chip_decode;
+  
+  assign chip_decode = {
+    (a[4] & a[3]),
+    (a[4] & ~a[3]),
+    (~a[4] & a[3]),
+    (~a[4] & ~a[3])};
+    
+    part4 memory[3:0](clk, in, a[2:0], chip_decode, reset, re, we, out);
+  
+endmodule
+
+module part6(
+  input clk,
+  input[31:0] in,
+  input[4:0] a,
+  input reset,
+  input re,
+  input we,
+  output[31:0] out
+);
+    wire[7:0] out0, out1, out2, out3;
+  
+    assign out = {out0, out1, out2, out3};
+    
+    part5 memory0(clk, in[31:24], a[4:0], reset, re, we, out0);
+    part5 memory1(clk, in[23:16], a[4:0], reset, re, we, out1);
+    part5 memory2(clk, in[15:8], a[4:0], reset, re, we, out2);
+    part5 memory3(clk, in[7:0], a[4:0], reset, re, we, out3);
+  
+endmodule
