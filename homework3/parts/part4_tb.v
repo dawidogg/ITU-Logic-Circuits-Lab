@@ -14,7 +14,7 @@ module part4_tb;
     cs = 1;
     re = 1;
     adress = 3'b000;
-    repeat(8) #10 adress += 1;
+    repeat(8) #10 adress = adress + 1;
   end
   endtask
 
@@ -28,8 +28,8 @@ module part4_tb;
     adress = 3'b000;    
     #10;
     repeat(7) begin
-      adress += 1;
-      in += 1;
+      adress = adress + 1;
+      in = in + 1;
       #10;
     end
     we = 0;

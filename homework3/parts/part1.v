@@ -6,6 +6,7 @@ module buffer(
   assign out = (e)? in : 1'bz;
 endmodule
 
+// Part 1
 module part1(
   input[7:0] data1,
   input[7:0] data2,
@@ -16,6 +17,7 @@ module part1(
   buffer buf2[7:0](data2, {8{select}}, out);
 endmodule
 
+// Part 2
 module part2(
   input[7:0] data1,
   input[7:0] data2,
@@ -29,6 +31,7 @@ module part2(
   buffer buf2[7:0](bus, {8{select}}, out2);
 endmodule
 
+// Part 3
 module part3(
   input clk,
   input[7:0] in,
@@ -47,6 +50,7 @@ module part3(
   always @(negedge reset) data = 8'b0;
 endmodule
 
+// Part 4
 module part4(
   input clk,
   input[7:0] in,
@@ -71,6 +75,7 @@ module part4(
   part3 memory[7:0](clk, in, re, we, (reset & cs), (decoded_adress & {8{cs}}), out);
 endmodule
 
+// Part 5
 module part5(
   input clk,
   input[7:0] in,
@@ -92,6 +97,7 @@ module part5(
   
 endmodule
 
+// Part 6
 module part6(
   input clk,
   input[31:0] in,
